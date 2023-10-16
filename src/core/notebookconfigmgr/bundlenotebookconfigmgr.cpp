@@ -10,9 +10,9 @@
 
 using namespace vnotex;
 
-const QString BundleNotebookConfigMgr::c_configFolderName = "vx_notebook";
+const QString BundleNotebookConfigMgr::c_configFolderName = ".vx_notebook";
 
-const QString BundleNotebookConfigMgr::c_configName = "vx_notebook.json";
+const QString BundleNotebookConfigMgr::c_configName = ".vx_notebook.json";
 
 BundleNotebookConfigMgr::BundleNotebookConfigMgr(const QSharedPointer<INotebookBackend> &p_backend,
                                                  QObject *p_parent)

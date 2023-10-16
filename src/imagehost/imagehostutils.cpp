@@ -17,7 +17,7 @@ QString ImageHostUtils::generateRelativePath(const Buffer *p_buffer)
         auto notebook = node->getNotebook();
         auto name = notebook->getName();
         if (name.isEmpty() || !PathUtils::isLegalFileName(name)) {
-            name = QStringLiteral("vx_notebooks");
+            name = QStringLiteral(".vx_notebooks");
         }
 
         relativePath = name;

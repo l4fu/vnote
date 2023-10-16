@@ -53,7 +53,7 @@ Node *ExternalFile::getNode() const
 
 QString ExternalFile::fetchImageFolderPath()
 {
-    auto pa = PathUtils::concatenateFilePath(getResourcePath(), QStringLiteral("vx_images"));
+    auto pa = PathUtils::concatenateFilePath(getResourcePath(), QStringLiteral(".vx_images"));
     QDir().mkpath(pa);
     return pa;
 }

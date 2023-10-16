@@ -102,7 +102,7 @@ QSharedPointer<Node> VXNotebookConfigMgr::loadRootNode()
 void VXNotebookConfigMgr::removeLegacyRecycleBinNode(const QSharedPointer<Node> &p_root)
 {
     // Do not support recycle bin node as it complicates everything.
-    auto node = p_root->findChild(QStringLiteral("vx_recycle_bin"),
+    auto node = p_root->findChild(QStringLiteral(".vx_recycle_bin"),
                                   FileUtils::isPlatformNameCaseSensitive());
     if (node) {
         removeNode(node, true, true);
@@ -846,8 +846,8 @@ bool VXNotebookConfigMgr::isBuiltInFolder(const Node *p_node, const QString &p_n
         || name == nb->getAttachmentFolder().toLower()
         || name == QStringLiteral("_v_images")
         || name == QStringLiteral("_v_attachments")
-        || name == QStringLiteral("vx_images")
-        || name == QStringLiteral("vx_attachments")) {
+        || name == QStringLiteral(".vx_images")
+        || name == QStringLiteral(".vx_attachments")) {
         return true;
     }
     return BundleNotebookConfigMgr::isBuiltInFolder(p_node, p_name);

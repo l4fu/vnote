@@ -12,11 +12,11 @@
 
 using namespace vnotex;
 
-const QString Notebook::c_defaultAttachmentFolder = QStringLiteral("vx_attachments");
+const QString Notebook::c_defaultAttachmentFolder = QStringLiteral(".vx_attachments");
 
-const QString Notebook::c_defaultImageFolder = QStringLiteral("vx_images");
+const QString Notebook::c_defaultImageFolder = QStringLiteral(".vx_images");
 
-const QString Notebook::c_defaultRecycleBinFolder = QStringLiteral("vx_recycle_bin");
+const QString Notebook::c_defaultRecycleBinFolder = QStringLiteral(".vx_recycle_bin");
 
 static vnotex::ID generateNotebookID()
 {
