@@ -55,5 +55,12 @@ VNote不是一个简单的Markdown编辑器。通过提供强大的笔记管理�
 
 感谢这些[捐赠用户](https://github.com/vnotex/vnote/wiki/Donate-List)！
 
+
+修改的地方：将程序中默认 以 vx_ 开头的路径或文件名 修改 为 .vx_ 
+
+1、方便在linux 中做为隐藏文件不容易被误删除。
+
+2、在obsidain中可以直接打开vnote的笔记本库。由于 .vx_开头的文件不会被obsidian索引，管理起来也比较方便。
+
 ## 许可
 VNote遵循[GNU LGPLv3](https://opensource.org/licenses/LGPL-3.0)许可。VNote项目的代码可以自由给VNoteX项目使用。
